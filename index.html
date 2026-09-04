@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock VFX Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader & Animated FLIP Logo -->
+    <div id="preloader" class="preloader">
+        <div class="logo-wrapper" id="logo-wrapper">
+            <svg id="lock-logo" class="lock-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- Archetto (Animato) -->
+                <path id="shackle" d="M 30,50 V 35 C 30,15 70,15 70,35 V 50" fill="none" stroke="#D91438" stroke-width="8" stroke-linecap="round" />
+                <!-- Corpo in Vetro -->
+                <path class="lock-body" d="M 20,50 H 80 C 85,50 90,55 90,60 V 100 C 90,110 80,115 70,115 H 30 C 20,115 10,110 10,100 V 60 C 10,55 15,50 20,50 Z" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <!-- Serratura Glowing -->
+                <circle cx="50" cy="75" r="5" fill="#D91438" />
+                <path d="M 47,75 L 45,88 H 55 L 53,75 Z" fill="#D91438" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Smart Pill Navigation -->
+    <header id="smart-nav" class="smart-nav liquid-glass hidden">
+        <!-- Anchor invisibile per calcolare le coordinate del FLIP -->
+        <div class="nav-logo-anchor" id="nav-logo-anchor"></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Spazio fittizio per testare lo scroll -->
+        <section id="home" style="height: 200vh;"></section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
